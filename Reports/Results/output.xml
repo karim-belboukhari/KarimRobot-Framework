@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.0 on win32)" generated="2024-10-25T04:07:59.619169" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Login" source="C:\Users\karim.belboukhari\Karim-Robot-Framework\TestCases\test_login.robot">
+<test id="s1-t1" name="Valid_Login_Test" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:07:59.782258" level="INFO">Opening browser 'chrome' to base url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-25T04:07:59.782258" elapsed="5.532151"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-25T04:08:05.315454" elapsed="0.026369"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-25T04:08:05.341823" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:05.341823" level="INFO">Typing text 'karim@example.com' into text field 'id:input-email'.</msg>
+<arg>id:input-email</arg>
+<arg>karim@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:05.341823" elapsed="3.120532"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:08.464366" level="INFO">Typing text 'karim@1234' into text field 'id:input-password'.</msg>
+<arg>id:input-password</arg>
+<arg>karim@1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:08.464366" elapsed="3.111333"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:11.576978" level="INFO">Clicking button 'xpath://*[@type="submit" and @value="Login"]'.</msg>
+<arg>xpath://*[@type="submit" and @value="Login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:11.575941" elapsed="3.104188"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:16.876114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/login_CTA.png"&gt;&lt;img src="Screenshots/login_CTA.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath://*[@type="submit" and @value="Login"]</arg>
+<arg>${SCREENSHOT_DIR}${/}login_CTA.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-10-25T04:08:14.681673" elapsed="2.195482"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:18.009149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/ecran.png"&gt;&lt;img src="Screenshots/ecran.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_DIR}${/}ecran.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-25T04:08:16.878102" elapsed="1.132088"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-25T04:08:18.010190" elapsed="3.170566"/>
+</kw>
+<tag>valid_login</tag>
+<status status="PASS" start="2024-10-25T04:07:59.782258" elapsed="21.398498"/>
+</test>
+<test id="s1-t2" name="Invalid_Login_Test" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:21.180756" level="INFO">Opening browser 'chrome' to base url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-25T04:08:21.180756" elapsed="5.079992"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-25T04:08:26.260748" elapsed="1.036994"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-10-25T04:08:27.297742" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:27.298702" level="INFO">Typing text 'invalid_email@example.com' into text field 'id:input-email'.</msg>
+<arg>id:input-email</arg>
+<arg>invalid_email@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:27.298702" elapsed="6.093271"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:33.392929" level="INFO">Typing text 'invalid_password' into text field 'id:input-password'.</msg>
+<arg>id:input-password</arg>
+<arg>invalid_password</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:33.392929" elapsed="6.071132"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:39.466040" level="INFO">Clicking button 'xpath://*[@type="submit" and @value="Login"]'.</msg>
+<arg>xpath://*[@type="submit" and @value="Login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-25T04:08:39.465091" elapsed="6.080538"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-25T04:08:47.684373" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/invalid_login.png"&gt;&lt;img src="Screenshots/invalid_login.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>${SCREENSHOT_DIR}${/}invalid_login.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-25T04:08:45.545629" elapsed="2.138744"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-25T04:08:47.685373" elapsed="4.116987"/>
+</kw>
+<tag>invalid_login</tag>
+<status status="PASS" start="2024-10-25T04:08:21.180756" elapsed="30.622651"/>
+</test>
+<doc>This test case is for practicing with the Robot Framework</doc>
+<status status="PASS" start="2024-10-25T04:07:59.619169" elapsed="52.185198"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">invalid_login</stat>
+<stat pass="1" fail="0" skip="0">valid_login</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test Login">Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
