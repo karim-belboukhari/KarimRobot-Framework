@@ -19,9 +19,9 @@ Alert handling
         Input Text Into Alert    check
         Click Element    id=empty-alert
         Handle Alert    accept
-        
+        Close Browser   
     END
-    Close All Browsers
+    
 
 
 
