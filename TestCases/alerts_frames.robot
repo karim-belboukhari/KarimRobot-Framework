@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   this tcs made for alert handling and frames
+Documentation   this tcs made for alert handling and frames AND including for loop on browsers
 Library    SeleniumLibrary
 
 *** Variables ***
@@ -21,7 +21,19 @@ Alert handling
         Handle Alert    accept
         Close Browser   
     END
+Frame handling
+    FOR    ${browser}    IN    @{browser}
+        Open Browser    ${url}   ${browser}
+        Maximize Browser Window
+        Set Selenium Implicit Wait    1 seconds
+        Select Frame   name=iframeWithAlert
+        Click Element    id=alertInFrame
+        Handle Alert    accept
+        Unselect Frame
+        Close Browser
+    END    
     
+        
 
 
 
